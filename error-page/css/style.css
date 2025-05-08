@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #000;
+}
+
+body {
+    color: #FFF;
+}
+
+.wrapper {
+    width: 100vw;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.btn_back {
+    margin: 25px 0 0 0;
+    color: #FFF;
+    background: #2e4c88;
+    border: solid 1px #00B2FF;
+    padding: 8px;
+    cursor: pointer;
+}

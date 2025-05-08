@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+    /* background-color: #000; */
+}
+
+body {
+    
+}
+
+.wrapper {
+    width: 100vw;
+    background-color: #000;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* SUB-HEAD */
+
+.sub-head {
+    display: flex;
+    justify-content: flex-end;
+    height: 77px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    padding-top: 30px;
+    padding-right: 366px;
+}
+
+.sub-head__link {
+    color: #00B2FF;
+    text-decoration: underline;
+}
+
+sub-head__link:hover,
+sub-head__link:focus,
+sub-head__link:active {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* HEAD */
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 486px;
+    background: url('../images/bgpicture-5.png');
+    background-repeat: no-repeat;
+    /* background-position: left 614px center; */
+    background-position: left calc(58%) center;
+    background-size: auto;
+}
+
+.head__menu {
+    display: flex;
+    height: 30px;
+    margin-left: 146px;
+    /* background-color: transparent; */
+}
+
+.head__menu a {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 300;
+    margin-right: 65px;
+    text-decoration: none;
+    /* background-color: transparent; */
+}
+
+.head__menu a:hover {
+    text-decoration: underline;
+}
+
+.head__find {
+    display: flex;
+    justify-content: end;
+    height: 28px;
+    width: 100%;
+    /* margin-left: 146px; */
+    /* background-color: transparent; */
+}
+
+.head__find-content {
+    display: flex;
+    justify-content: end;
+    width: 378px;
+    margin-right: 122px;
+    border-bottom: solid 1px #FF00DD;
+    /* background-color: transparent; */
+}
+
+.custom-input {
+    width: calc(100%);
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.custom-input::placeholder {
+    color: #FFF;
+    text-align: right;
+}
+
+.head__find-content img {
+    background: transparent;
+    margin: 0 18px 2px 18px;
+}
+
+.head__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    height: 100%;
+    margin-left: 108px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    /* background-color: transparent; */
+}
+
+.head__content-left {
+    display: flex;
+    flex-direction: column;
+    /* background-color: transparent; */
+    padding-left: 81px;
+}
+
+.head__line-1 {
+    padding-top: 35px;
+    margin-bottom: 14px;
+    /* background-color: transparent; */
+}
+
+.head__line-1 .highlighted {
+    text-decoration: underline;
+    font-weight: 300;
+    line-height: 150%;
+    /* background-color: transparent; */
+}
+
+.head__line-1 img {
+    margin-left: 4px;
+    /* background-color: transparent; */
+}
+
+.tagline {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #FFF;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* background-color: transparent; */
+}
+
+.head__line-2 {
+    /* background-color: transparent; */
+    margin-bottom: -5px;
+}
+
+.head__line-2 p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 63px;
+    font-weight: 800;
+    line-height: 120%;
+    color: #FFF;
+    /* background-color: transparent; */
+    text-transform: uppercase;
+}
+
+.head__line-3 {
+    /* background-color: transparent; */
+}
+
+.head__line-3 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 100%;
+    color: transparent;
+    -webkit-text-stroke: 1px #0045ff;
+    font-family: sans-serif;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    /* background-color: transparent; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NEXT container */
+
+.next {
+    width: 1000px;
+    height: 1px;
+    background-color: #C4E4EA;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/bgpicture-437.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    color: white;
+    font-size: 48px;
+    background-color: transparent; /* <-- фон прозрачный */
+    margin: 0;
+  }
+
