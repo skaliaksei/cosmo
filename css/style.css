@@ -20,6 +20,7 @@ body {
 
 .wrapper {
     width: 100vw;
+    /* width: 1920px; */
     background-color: #000;
 }
 
@@ -182,7 +183,9 @@ sub-head__link:active {
 
 .head__line-2 p{
     font-family: "Montserrat", sans-serif;
+    /* font-size: clamp(2rem, 5vw, 4rem); */
     font-size: 63px;
+    /* font-size: 4rem; */
     font-weight: 800;
     line-height: 120%;
     color: #FFF;
@@ -267,18 +270,60 @@ sub-head__link:active {
 
 
 /* --------------------------------- */
-.head__statistic {
+/* Временная заглушка */
+/* .head__statistic {
     width: 253px;
     height: 134px;
     background: url('../images/tst.png')
+} */
+/* --------------------------------- */
+
+.head__statistic {
+    /* background-color: #8BD7FF; */
 }
 
+.statistic__container {
+    display: flex;
+    justify-content: center;
+    width: 231px;
+    height: 134px;
+    padding-top: 13px;
+    padding-left: 4px;
+    background-color: rgba(0, 9, 16, 0.5);
+}
 
+.statistic__container-left {
+    display: flex;
+    flex-direction: column;
+}
 
+.statistic__container-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
 
+.statistic__container-first {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.0;
+}
 
+.statistic__container-second {
+    font-size: 57px;
+    font-weight: 300;
+    line-height: 1.0;
+    color: rgba(217, 217, 217, 0.2);
+}
 
+.left-digit {
+    text-align: end;
+}
 
+.right-txt {
+    margin-top: 10px;
+    margin-left: 8px;
+}
 
 
 
@@ -313,3 +358,21 @@ sub-head__link:active {
     margin: 0;
   }
 
+
+
+
+  /* .fancy-number {
+    font-family: sans-serif;
+    color: #000;
+    font-size: 48px;
+  }
+  
+  .fancy-number .low {
+    display: inline-block;
+    transform: translateY(6px); 
+  }
+  
+  .fancy-number .high {
+    display: inline-block;
+    transform: translateY(-4px);
+  } */
