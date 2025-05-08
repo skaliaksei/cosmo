@@ -207,7 +207,71 @@ sub-head__link:active {
     /* background-color: transparent; */
 }
 
+.head__content-right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #DD74F8; */
+    margin-top: 120px;
+}
 
+/* --------------------------------- */
+
+.head__list {
+    width: 265px;
+    height: 72px;
+    margin-right: 150px;
+    margin-bottom: 32px;
+    /* background-color: #00B2FF; */
+}
+
+.head__custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+  
+.head__item {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 1px;
+    /* font-size: 18px; */
+    /* color: white;  */
+}
+  
+.head__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+}
+  
+  /* Цвета маркеров */
+  .head__item.red::before {
+    background-color: #DD74F8;
+  }
+  
+  .head__item.blue::before {
+    background-color: #FFEA00;
+  }
+  
+  .head__item.green::before {
+    background-color: #8BD7FF;
+  }
+
+
+/* --------------------------------- */
+.head__statistic {
+    width: 253px;
+    height: 134px;
+    background: url('../images/tst.png')
+}
 
 
 
