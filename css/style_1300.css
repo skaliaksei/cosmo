@@ -1,0 +1,16 @@
+@media all and (max-width: 1300px) {
+
+    .warning {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .warning h2 {
+        line-height: 1.5;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+}
