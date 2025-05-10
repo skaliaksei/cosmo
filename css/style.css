@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper {
-    width: 100vw;
+    /* width: 100vw; */
     /* width: 1920px; */
     background-color: #000;
 }
@@ -29,6 +29,11 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 /* SUB-HEAD */
@@ -369,6 +374,7 @@ sub-head__link:active {
     /* background-color: #00B2FF; */
     margin-left: 108px;
     padding-left: 38px;
+    padding-bottom: 30px;
     border-left: solid 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -418,6 +424,9 @@ sub-head__link:active {
     background-position: center;
     padding-top: 115px;
 }
+.slider__item-1:hover {
+    cursor: pointer;
+}
 .slider__item-2 {
     background-image: url('../images/top-slider/2.png');
     background-size: cover;
@@ -444,4 +453,128 @@ sub-head__link:active {
     background-image: url('../images/top-slider/6.png');
     background-size: cover;
     background-position: center;
+}
+
+/****** -------------------********/
+/****** MARKETING--SECTION ********/
+/****** -------------------********/
+
+.marketing-section {
+    max-width: 1650px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    border-right: solid 1px rgba(255, 255, 255, 0.7);
+    margin-left: 108px;
+    padding-left: 38px;
+    padding-right: 140px;
+    /* padding-left: 38px; */
+}
+
+.marketing__head-container {
+    height: 173px;
+}
+
+.marketing__footer-container {
+    height: 155px;
+}
+
+.marketing__main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 365px;
+    background-image: url('../images/home-quote-1.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+    
+}
+
+.marketing__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 1128px;
+    padding-top: 30px;
+}
+
+.marketing__left-title {
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1.28;
+    margin-bottom: 35px;
+}
+
+.marketing__left-subtitle {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.0;
+}
+
+.marketing__left-subtitle .pink-light {
+    background-color: #FF00DD;
+    padding: 15px 10px;
+}
+
+.marketing__right {
+    padding-top: 138px;
+}
+
+.marketing__right-title {
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: end;
+}
+
+/****** --------------********/
+/****** TEST--SECTION ********/
+/****** --------------********/
+
+.test-container {
+    margin-left: 108px;
+    padding-left: 38px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+.test-container-item-1 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #000; /* серая заливка */
+    overflow: hidden;
+    border: 2px solid yellow;
+    border-bottom: #000;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 2px; /* немного выше линии */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid yellow;
+  z-index: 2;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: -1px; /* немного выше линии */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid black;
+  z-index: 2;
 }

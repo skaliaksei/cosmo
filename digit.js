@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const leftDigit = document.querySelector('.left-digit');
     const rightDigit = document.querySelector('.right-digit');
   
+    // const finalValue = 2466;
     const finalValue = 2466;
     const startValue = 10;
     const duration = 2300;
