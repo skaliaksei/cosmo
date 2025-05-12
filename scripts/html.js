@@ -1,0 +1,1 @@
+export const htmlCode = '<div class="line"></div><div class="yellow-triangle"></div><div class="black-triangle"></div>';
