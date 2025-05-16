@@ -594,13 +594,6 @@ sub-head__link:active {
     margin-left: 108px;
     padding-left: 144px;
     padding-right: 140px;
-
-    
-    /* background-color: #DD74F8; */
-    /* display: flex;
-    justify-content: space-between; */
-    
-    /* margin: 0 auto; */
 }
 
 .bottoms-container {
@@ -615,6 +608,7 @@ sub-head__link:active {
     height: 45px;
     background-image: url('../images/main-slider/prev.png');
     cursor: pointer;
+    /* opacity: 0.3; */
 }
 
 .bottoms-container .nxt {
@@ -622,6 +616,7 @@ sub-head__link:active {
     height: 45px;
     background-image: url('../images/main-slider/next.png');
     cursor: pointer;
+    opacity: 1.0;
 }
 
 .best-text {
@@ -647,16 +642,155 @@ sub-head__link:active {
 /****** MAIN--SLIDER ********/
 /****** -------------********/
 
-.main-slider {
-    width: 100%;
-    height: 200px;
-    background-color: #0045ff;
-    z-index: 5;
+.for-slider {
+    max-width: 1650px;
+    height: 339px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    border-right: solid 1px rgba(255, 255, 255, 0.7);
+    margin-left: 108px;
+    /* background-color: #DD74F8; */
+
+    margin-bottom: -339px;
 }
 
+.main-slider {
+    
 
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    max-width: 100%;
+    height: 339px;
+    
+    margin-left: 108px;
+    padding-left: 144px;
+}
 
+.wrapper-slider {
+    display: flex;
+    align-items: end;
 
+    
+    width: 100%;
+    overflow: hidden;        /* ← обрезаем лишние слайды справа */
+    /* background-color: #3e579c; */
+}
+
+.slider-container {
+    display: flex;
+    align-items: end;
+    width: max-content;      /* ← ширина по содержимому */
+    /* width: 100%; */
+    height: 100%;
+    /* background-color: blueviolet; */
+    transition: 1s;
+    transform: translateX(0);
+}
+
+/* .slider-container:nth-child(3n+1) {background-color: #253358;} */
+.slider-container:nth-child(3n+2) {background-color: #662f2f;}
+
+.item-img {
+    min-width: 300px;
+    height: 100%;
+    /* background-color: aqua; */
+    flex-shrink: 0;          /* ← запрет сжатия */
+}
+
+.img-1,
+.img-3,
+.img-5,
+.img-7 {
+    /* background-color: rgb(85, 150, 150); */
+}
+
+.img-1 {
+    background-image: url('../images/main-slider/slide-1.jpg');
+}
+
+.img-2 {
+    background-image: url('../images/main-slider/slide-2.jpg');
+}
+
+.img-3 {
+    background-image: url('../images/main-slider/slide-3.jpg');
+}
+
+.img-4 {
+    background-image: url('../images/main-slider/slide-4.jpg');
+}
+
+.img-5 {
+    background-image: url('../images/main-slider/slide-5.jpg');
+}
+
+.img-6 {
+    background-image: url('../images/main-slider/slide-2.jpg');
+}
+
+.img-7 {
+    background-image: url('../images/main-slider/slide-1.jpg');
+}
+
+.img-8 {
+    background-image: url('../images/main-slider/slide-3.jpg');
+}
+
+.img-9 {
+    background-image: url('../images/main-slider/slide-4.jpg');
+}
+.img-10 {
+    background-image: url('../images/main-slider/slide-10.jpg');
+}
+.img-11 {
+    background-image: url('../images/main-slider/slide-11.jpg');
+}
+.img-12 {
+    background-image: url('../images/main-slider/slide-12.jpg');
+}
+.img-13 {
+    background-image: url('../images/main-slider/slide-13.jpg');
+}
+.img-14 {
+    background-image: url('../images/main-slider/slide-14.jpg');
+}
+.img-15 {
+    background-image: url('../images/main-slider/slide-15.jpg');
+}
+.img-16 {
+    background-image: url('../images/main-slider/slide-16.jpg');
+}
+.img-17 {
+    background-image: url('../images/main-slider/slide-17.jpg');
+}
+.img-18 {
+    background-image: url('../images/main-slider/slide-18.jpg');
+}
+.img-19 {
+    background-image: url('../images/main-slider/slide-19.jpg');
+}
+.img-20 {
+    background-image: url('../images/main-slider/slide-20.jpg');
+}
+.img-21 {
+    background-image: url('../images/main-slider/slide-21.jpg');
+}
+
+.img-22,
+.img-10 {
+    background-image: url('../images/main-slider/slide-6.jpg');
+}
+
+.ttts {
+    width: 300px;
+    height: 300px;
+}
+
+.new-container {
+    height: 50px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    margin-left: 108px;
+}
 /****** --------------********/
 /****** TEST--SECTION ********/
 /****** --------------********/
