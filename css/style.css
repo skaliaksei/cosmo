@@ -875,6 +875,83 @@ sub-head__link:active {
     margin-left: 108px;
 }
 
+/********* --------***********/
+/********* REVIEWS ***********/
+/********* --------***********/
+
+.reviews {
+    display: flex;
+    /* flex-direction: column; */
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    margin-left: 108px;
+    padding-left: 112px;
+    
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    
+}
+
+.reviews__column-1 {
+    min-width: 96px;
+}
+
+.reviews__column-1 p {    
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 156%;
+    color: #0045FF;
+    padding-top: 20px;
+}
+
+.reviews__column-2 {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.reviews__column-2-title {
+    font-size: 42px;
+    line-height: 116%;
+    margin-bottom: 30px;
+}
+
+.reviews__column-2-subtitle p{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.reviews__column-2-subtitle .mini {
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 48px;
+}
+
+.reviews__column-2-subtitle p span {
+    background-color: #00B2FF;
+}
+
+.reviews__column-3 {
+    width: 700px;
+    height: 1px;
+    background-color: #FFF;
+    margin-top: 54px;
+    margin-left: 50px;
+}
+
+.reviews__column-2-button {
+    width: 326px;
+    height: 90px;
+    background-image: url('../images/plus.png');
+    border: 1px solid #FFF;
+    border-radius: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: 130px; /* TODO */
+}
+
 /****** --------------********/
 /****** TEST--SECTION ********/
 /****** --------------********/
