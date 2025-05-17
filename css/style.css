@@ -930,6 +930,11 @@ sub-head__link:active {
 
 .reviews__column-2-subtitle p span {
     background-color: #00B2FF;
+    cursor: pointer;
+}
+
+.reviews__column-2-subtitle p span:hover {
+    text-decoration: underline;
 }
 
 .reviews__column-3 {
@@ -948,8 +953,13 @@ sub-head__link:active {
     border-radius: 45px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 0.4s ease;
     cursor: pointer;
     margin-bottom: 130px; /* TODO */
+}
+
+.reviews__column-2-button:hover {
+    background-color: #00B2FF;
 }
 
 /****** --------------********/
