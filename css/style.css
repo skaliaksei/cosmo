@@ -595,6 +595,7 @@ sub-head__link:active {
     margin-left: 108px;
     padding-left: 144px;
     padding-right: 140px;
+    /* margin-bottom: -50px; */
 }
 
 .bottoms-container {
@@ -623,7 +624,7 @@ sub-head__link:active {
 .best-text {
     /* border-left: solid 1px rgba(255, 255, 255, 0.7); */
     margin-left: 108px;
-    margin-top: -200px;
+    margin-top: -165px;
     text-align: right;
 }
 
@@ -649,6 +650,7 @@ sub-head__link:active {
     border-left: solid 1px rgba(255, 255, 255, 0.7);
     border-right: solid 1px rgba(255, 255, 255, 0.7);
     margin-left: 108px;
+    margin-top: -25px;
     /* background-color: #DD74F8; */
 
     margin-bottom: -339px;
@@ -668,35 +670,23 @@ sub-head__link:active {
     display: flex;
     align-items: end;
     width: 100%;
-    overflow: hidden;        /* ← обрезаем лишние слайды справа */
+    overflow: hidden;
 }
 
 .slider-container {
     display: flex;
     align-items: end;
-    width: max-content;      /* ← ширина по содержимому */
-    /* width: 100%; */
+    width: max-content;
     height: 100%;
-    /* background-color: blueviolet; */
-    transition: 1s;
+    transition: .5s;
     transform: translateX(0);
 }
-
-/* .slider-container:nth-child(3n+1) {background-color: #253358;} */
-/* .slider-container:nth-child(3n+2) {background-color: #662f2f;} */
 
 .item-img {
     min-width: 300px;
     height: 100%;
     /* background-color: aqua; */
     flex-shrink: 0;          /* ← запрет сжатия */
-}
-
-.img-1,
-.img-3,
-.img-5,
-.img-7 {
-    /* background-color: rgb(85, 150, 150); */
 }
 
 .img-1 {
@@ -781,11 +771,116 @@ sub-head__link:active {
     height: 300px;
 }
 
-.new-container {
-    height: 50px;
+/********* ------ ***********/
+/********* RATING ***********/
+/********* ------ ***********/
+
+.rating-container {
+    height: 195px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+    margin-left: 108px;
+    padding-top: 50px;
+    /* background-color: #0045ff; */
+    /* margin-bottom: 175px; */
+}
+
+.rating__title {
+    display: flex;
+    /* justify-content: start; */
+    padding-left: 76px;
+    margin-bottom: 35px;
+}
+
+.rating__title-item h3 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 175%;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.rating__title-item-transform {
+    margin-left: 25px;
+}
+
+.rating__title-item-transform h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 53px;
+    font-weight: 800;
+    line-height: 120%;
+    color: transparent;
+    -webkit-text-stroke: 1px #8BD7FF;
+    letter-spacing: 0%;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.rating__title-item {
+}
+
+
+.rating__subtitle {
+    display: flex;
+    margin-left: 21px;
+}
+
+.rating__subtitle-item {
+    margin-left: 50px;
+}
+
+
+
+.rating__subtitle-item h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 120%;
+    color: transparent;
+    -webkit-text-stroke: 1px #00FFE1;
+    letter-spacing: 0%;
+    font-family: sans-serif;
+
+}
+
+.rating__subtitle-item a {
+    text-decoration: none;
+}
+
+.rating__subtitle-item a:hover {
+    text-decoration: underline;
+}
+
+.rating__subtitle-item a.inactive {
+  pointer-events: none;             /* отключает клики */
+  cursor: default;                  /* курсор по умолчанию */
+  text-decoration: none;            /* убираем стандартное подчёркивание */
+}
+
+.rating__subtitle-item a.inactive h3 {
+  color: transparent;               /* текст прозрачный */
+  -webkit-text-stroke: 1px #8BD7FF; /* обводка нужного цвета */
+  position: relative;
+}
+
+/* добавляем псевдоэлемент для зачёркивания */
+.rating__subtitle-item a.inactive h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;                         /* по центру текста */
+  height: 2px;                      /* толщина линии */
+  background-color: #00B2FF;        /* цвет линии */
+  transform: translateY(-50%);
+}
+
+.rating-footer {
+    height: 175px;
+    /* width: 100%; */
     border-left: solid 1px rgba(255, 255, 255, 0.7);
     margin-left: 108px;
 }
+
 /****** --------------********/
 /****** TEST--SECTION ********/
 /****** --------------********/

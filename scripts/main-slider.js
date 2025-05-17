@@ -3,18 +3,12 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const slideContainer = document.getElementsByClassName('slider-container')[0];
 
-
-console.log(position);
-
 setOpacity();
-
 
 nextBtn.addEventListener('click', () => {
     if (position > -4800) {
         position -= 1200;
-
         slideContainer.style.transform = `translateX(${position}px)`;
-        console.log(position);
 
         setOpacity();
     }
@@ -24,13 +18,10 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     if (position < 0) {
         position += 1200;
-
         slideContainer.style.transform = `translateX(${position}px)`;
-        console.log(position);
 
         setOpacity();
     }
-    
 });
 
 
