@@ -818,17 +818,14 @@ sub-head__link:active {
 .rating__title-item {
 }
 
-
 .rating__subtitle {
     display: flex;
     margin-left: 21px;
 }
 
-.rating__subtitle-item {
+.rating__subtitle-item:not(:first-child) {
     margin-left: 50px;
 }
-
-
 
 .rating__subtitle-item h3 {
     font-family: "Montserrat", sans-serif;
@@ -839,7 +836,6 @@ sub-head__link:active {
     -webkit-text-stroke: 1px #00FFE1;
     letter-spacing: 0%;
     font-family: sans-serif;
-
 }
 
 .rating__subtitle-item a {
@@ -851,32 +847,30 @@ sub-head__link:active {
 }
 
 .rating__subtitle-item a.inactive {
-  pointer-events: none;             /* отключает клики */
-  cursor: default;                  /* курсор по умолчанию */
-  text-decoration: none;            /* убираем стандартное подчёркивание */
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 
 .rating__subtitle-item a.inactive h3 {
-  color: transparent;               /* текст прозрачный */
-  -webkit-text-stroke: 1px #8BD7FF; /* обводка нужного цвета */
-  position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px #8BD7FF;
+    position: relative;
 }
 
-/* добавляем псевдоэлемент для зачёркивания */
 .rating__subtitle-item a.inactive h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;                         /* по центру текста */
-  height: 2px;                      /* толщина линии */
-  background-color: #00B2FF;        /* цвет линии */
-  transform: translateY(-50%);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background-color: #00B2FF;
+    transform: translateY(-50%);
 }
 
 .rating-footer {
     height: 175px;
-    /* width: 100%; */
     border-left: solid 1px rgba(255, 255, 255, 0.7);
     margin-left: 108px;
 }
