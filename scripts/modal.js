@@ -14,11 +14,11 @@ function loadModalHTML(url, containerId) {
 }
 
 document.getElementById("openModal").addEventListener("click", () => {
-  loadCSS("../reviews-page/css/modal-style.css");
+  loadCSS("../cosmo/reviews-page/css/modal-style.css");
   loadModalHTML("./reviews-page/modal.html", "modalContainer");
 });
 
 document.getElementById("openModal-2").addEventListener("click", () => {
-  loadCSS("../reviews-page/css/modal-style.css");
+  loadCSS("../cosmo/reviews-page/css/modal-style.css");
   loadModalHTML("./reviews-page/modal.html", "modalContainer");
 });
