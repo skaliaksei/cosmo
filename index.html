@@ -27,6 +27,8 @@
     <title>COSMO</title>
 </head>
 <body>
+    <!-- MODAL-MENU-REVIEWS -->
+    <div id="modalContainer"></div>
 
     <!-- SUB-HEAD -->
     <div class="warning">
@@ -199,17 +201,16 @@
                         <p>Вы уже были?<br>Хотите поблагодарить мастера?</p>
                     </div>
                     <div class="reviews__column-2-subtitle">
-                        <p>Вы можете <span> оставить отзыв </span> о специалисте или салоне<br></p>
+                        <p>Вы можете <span id="openModal-2"> оставить отзыв </span> о специалисте или салоне<br></p>
                         <p class="mini">Помните, что оставляя отзыв вы помогаете другим определиться с выбором и узнать подходит ли этот специалист</p>
                     </div>
-                    <div class="reviews__column-2-button"></div>
+                    <div class="reviews__column-2-button" id="openModal"></div>
                 </div>
                 <div class="reviews__column-3">
                     <div class="reviews__column-3-line"></div>
                 </div>
             </div>
         </div>
-
 
 
     </div>
@@ -221,5 +222,6 @@
     <script src="digit.js" type="text/javascript"></script>
     <script src="./scripts/main-slider.js" type="text/javascript"></script>
     <script src="./scripts/frame.js" type="module"></script>
+    <script src="./scripts/modal.js" type="module"></script>
 </body>
 </html>

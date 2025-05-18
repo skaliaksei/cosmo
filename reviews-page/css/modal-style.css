@@ -1,0 +1,255 @@
+#modalContainer {
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.modal__main-container {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 700px; */
+    width: 700px;
+    height: 600px;
+    background-color: #0045FF;
+    padding: 20px 20px 20px 0;
+}
+
+/* MODAL */
+.close {
+    width: 27px;
+    height: 27px;
+    align-self: end;
+    background-image: url(../images/x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.second__line {
+    display: flex;
+}
+
+.second-back {
+    width: 484px;
+    height: 85px;
+    background-image: url('../images/reviews.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -10px;
+}
+
+.second-title {
+    max-width: 155px;
+    margin-left: 20px;
+    padding-top: 2px;
+}
+
+.second-title h3 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.second-title .second-title-mini {
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.thanks h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: -42px;
+}
+
+.contacts {
+    display: flex;
+    margin-left: 61px;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+
+.contacts__title {
+    width: 160px;
+}
+
+.contacts__title h3 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.contacts__data {
+    margin-top: 16px;
+}
+
+.contacts__name {
+    width: 352px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 11px;
+}
+
+.contacts__name .custom-input {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+}
+
+.contacts__name .custom-input::placeholder {
+    color: #FFF;
+}
+
+.contacts__phone {
+    width: 352px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 26px;
+}
+
+.contacts__phone .custom-input {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+}
+
+.contacts__phone .custom-input::placeholder {
+    color: #FFF;
+}
+
+.master {
+    width: 581px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 26px;
+    margin-left: 60px;
+}
+
+.master .custom-input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+}
+
+.master .custom-input::placeholder {
+    color: #FFF;
+}
+
+.review {
+    width: 581px;
+    height: 153px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 26px;
+    margin-left: 60px;
+}
+
+.review .custom-input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    /* height: 100%; */
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+    vertical-align: top;
+    padding-top: 10px;
+    color: #FFF;
+}
+
+.review .custom-input::placeholder {
+    color: #FFF;
+}
+
+.send__review {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.send__left p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 3px;
+}
+
+.send__left .send__big {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+
+.send__right {
+    width: 48px;
+    height: 48px;
+    background-image: url('../images/send.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
