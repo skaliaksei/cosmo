@@ -7,13 +7,6 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-
-
-
-
 * {
     box-sizing: border-box;
 	margin: 0;
@@ -56,7 +49,7 @@ body {
 }
 
 /* MODAL */
-.close {
+.modal-close {
     width: 27px;
     height: 27px;
     align-self: end;
