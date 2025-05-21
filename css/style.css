@@ -966,6 +966,11 @@ sub-head__link:active {
 /****** STOCK--SECTION ********/
 /****** ---------------********/
 
+.rating-container {
+    background-color: #000;
+    height: 100%;
+}
+
 .rating__title-stock .rating__title-item-transform h3{
     font-size: 46px;
 }
