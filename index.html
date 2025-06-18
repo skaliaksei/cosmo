@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- <link rel="stylesheet" href="./reviews-page/css/modal-style.css" type="text/css"> -->
@@ -24,12 +22,11 @@
     <!-- <link rel="stylesheet" href="css/style_768.css" type="text/css"> -->
     <!-- <link rel="stylesheet" href="css/style_600.css" type="text/css"> -->
     <!-- <link rel="stylesheet" href="css/style_450.css" type="text/css"> -->
-
     <title>COSMO</title>
 </head>
 <body>
     <!-- MODAL-MENU-REVIEWS -->
-    <div id="modalContainer"></div>
+    <div id="modalContainer" id="modal-container"></div>
 
     <!-- SUB-HEAD -->
     <div class="warning">
@@ -214,21 +211,33 @@
         </div>
 
         <!-- ACTIONS -->
-        <div class="main-container" id="actions">
-            
+        <div class="main-container">
+            <div class="actions__container-wrapper" id="actions"></div>
         </div>
 
+        <!-- WHY -->
+        <div class="main-container">
+            <div class="why__container-wrapper">
+                <div class="why__first-line">
+                    <div class="why__question">
+                        <h3>ВОПРОС? //</h3>
+                    </div>
+                    <div class="why__title">
+                        <h3>А почему МЫ?</h3>
+                    </div>
+                    <div class="why__line-container"></div>
+                </div>
+                
+                <!-- <div class="why__description"></div> -->
+            </div>
+        </div>
 
     </div>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <!-- <script src="js/dark.js" type="text/javascript"></script> -->
-    <!-- <script src="./contact/js/map.js" type="text/javascript"></script> -->
-    <!-- <script src="js/main.js" type="text/javascript"></script> -->
-    <script src="digit.js" type="text/javascript"></script>
+    
+    <script src="./scripts/digit.js" type="text/javascript"></script>
     <script src="./scripts/main-slider.js" type="text/javascript"></script>
     <script src="./scripts/frame.js" type="module"></script>
-    <script src="./scripts/modal.js" type="module"></script>
+    <script src="./components/modal/load-modal.js" type="module"></script>
     <script src="./scripts/load-actions.js" type="module"></script>
 </body>
 </html>

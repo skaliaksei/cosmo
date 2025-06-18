@@ -12,4 +12,4 @@ async function loadComponent(htmlPath, cssPath, targetSelector) {
   document.querySelector(targetSelector).innerHTML += html;
 }
 
-loadComponent("components/actions.html", "css/actions.css", "#actions");
+loadComponent('components/actions.html', 'css/actions.css', '#actions');

@@ -17,16 +17,16 @@ document.getElementById("openModal").addEventListener("click", () => {
   const modal = document.getElementById("modalContainer");
   modal.style.display = "block";
 
-  loadCSS("../cosmo/reviews-page/css/modal-style.css");
-  loadModalHTML("./reviews-page/modal.html", "modalContainer");
+  loadCSS("./components/modal/css/modal-style.css");
+  loadModalHTML("./components/modal/modal.html", "modalContainer");
 });
 
 document.getElementById("openModal-2").addEventListener("click", () => {
   const modal = document.getElementById("modalContainer");
   modal.style.display = "block";
 
-  loadCSS("../cosmo/reviews-page/css/modal-style.css");
-  loadModalHTML("./reviews-page/modal.html", "modalContainer");
+  loadCSS("./components/modal/css/modal-style.css");
+  loadModalHTML("./components/modal/modal.html", "modalContainer");
 });
 
 // Close Modal
