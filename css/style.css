@@ -970,10 +970,12 @@ sub-head__link:active {
     margin-left: 108px;
     padding-top: 50px;
     padding-left: 150px;
+    
 }
 
 .why__first-line {
     display: flex;
+    margin-bottom: 58px;
 }
 
 .why__question h3 {
@@ -996,11 +998,24 @@ sub-head__link:active {
 }
 
 .why__line-container {
-    min-width: 948px;
+    width: 948px;
     height: 1px;
     background-color: #FFF;
     margin-top: 25px;
     margin-left: 20px;
+}
+
+.why__second-line {
+    width: 550px;
+    margin-bottom: 50px;
+}
+
+.why__description {
+    font-size: 24px;
+}
+
+.why__description span {
+    background-color: #0045FF;
 }
 
 
